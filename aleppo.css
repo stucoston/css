@@ -123,3 +123,11 @@
 .sc-text-center {
   text-align: center;  
 }
+.sc-text-white {
+  color: #fff;
+  text-decoration: none;
+}
+.sc-text-black {
+  color: #171717;
+  text-decoration: none;
+}
