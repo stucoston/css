@@ -1,4 +1,7 @@
-
+img {
+  max-width: 100%;
+  height: auto;
+}
 /****** flex center ******/
 .sc-flex-center,.sc-flex-center-row {
   display: flex;
@@ -115,8 +118,8 @@
 
 /****** size *****/
 .sc-full-screen {
-  width: 100vw;
-  height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
 }
 .sc-full-height {
   height:100%
