@@ -1,0 +1,113 @@
+  /****** center ******/
+  .sc-flex-center,.sc-flex-center-row {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;!important 
+  }
+  .sc-flex-center-column {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;!important 
+  }
+  .sc-flex-center-row-reverse {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;!important 
+  }
+  .sc-flex-center-column-reverse {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;!important 
+  }
+  
+  /****** left ******/
+  .sc-flex-left,.sc-flex-left-row {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;!important 
+  }
+  .sc-flex-left-column {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;!important 
+  }
+  .sc-flex-left-row-reverse {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;!important 
+  }
+  .sc-flex-left-column-reverse {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;!important 
+  }
+  
+    /****** right ******/
+  .sc-flex-right,.sc-flex-right-row {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;!important 
+  }
+  .sc-flex-right-column {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;!important 
+  }
+  .sc-flex-right-row-reverse {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;!important 
+  }
+  .sc-flex-right-column-reverse {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;!important 
+  }
