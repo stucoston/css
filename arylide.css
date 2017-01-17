@@ -127,6 +127,38 @@ img {
 .sc-full-width {
   width: 100%;
 }
+.sc-Jumbo {
+  font-size: 10vmin;
+}
+.sc-xxxlarge {
+  font-size: 9vmin;
+}
+.sc-xxlarge {
+  font-size: 8vmin;
+}
+.sc-xlarge {
+  font-size: 7vmin;
+}
+.sc-large {
+  font-size: 6vmin;
+}
+.sc-medium {
+  font-size: 5vmin;
+}
+.sc-small {
+  font-size: 4vmin;
+}
+.sc-xsmall {
+  font-size: 3vmin;
+}
+.sc-xxsmall {
+  font-size: 2vmin;
+}
+.sc-xxxsmall {
+  font-size: 1vmin;
+}
+
+/****** position ******/
 .sc-vertical-middle {
   top: 50%;
   -ms-transform: translateY(-50%); /* IE 9 */
@@ -136,6 +168,8 @@ img {
 .sc-text-center {
   text-align: center;  
 }
+
+/****** colors ******/
 .sc-text-white {
   color: #fff;
   text-decoration: none;
