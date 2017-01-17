@@ -160,6 +160,7 @@ img {
 
 /****** position ******/
 .sc-vertical-middle {
+  position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%); /* IE 9 */
   -webkit-transform: translateY(-50%); /* Chrome, Safari, Opera */
