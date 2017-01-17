@@ -118,8 +118,8 @@ img {
 
 /****** flex items ******/
 .sc-flex-item-small {
-  flex: 1 1 285px;
-  max-width: 315px; /* Important - increase will mess up mobile  */
+  flex: 1 1 250px;
+  max-width: 300px; /* Important - increase will mess up mobile  */
   margin: 10px 15px;
   text-overflow: ellipsis;
   overflow:hidden;
