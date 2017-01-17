@@ -40,6 +40,17 @@ img {
   margin: 0;!important 
 }
 
+/****** flex spacearound ******/
+.sc-flex-spacearound,.sc-flex-spacearound-row {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;!important 
+}
+
 /****** flex left ******/
 .sc-flex-left,.sc-flex-left-row {
   display: flex;
@@ -118,7 +129,7 @@ img {
 
 /****** flex items ******/
 .sc-flex-item-small {
-  flex: 1 1 250px;
+  flex: 1 1 200px;
   max-width: 300px; /* Important - increase will mess up mobile  */
   margin: 10px 15px;
   text-overflow: ellipsis;
@@ -151,7 +162,7 @@ img {
 .sc-large {
   font-size: 6vmin;
 }
-.sc-medium {
+.sc-med {
   font-size: 5vmin;
 }
 .sc-small {
