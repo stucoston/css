@@ -116,6 +116,15 @@ img {
   margin: 0;!important 
 }
 
+/****** flex items ******/
+.sc-flex-item-small {
+  flex: 1 1 285px;
+  max-width: 315px; /* Important - increase will mess up mobile  */
+  margin: 10px 15px;
+  text-overflow: ellipsis;
+  overflow:hidden;
+}
+
 /****** size *****/
 .sc-full-screen {
   min-width: 100%;
@@ -168,6 +177,14 @@ img {
 }
 .sc-text-center {
   text-align: center;  
+}
+.sc-position-fixed-middle {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50% -50%); /* IE 9 */
+  -webkit-transform: translate(-50% -50%); /* Chrome, Safari, Opera */
+  transform: translate(-50% -50%);
 }
 
 /****** colors ******/
