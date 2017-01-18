@@ -211,3 +211,13 @@ img {
   color: #171717;
   text-decoration: none;
 }
+
+/****** containers ******/
+.sc-container-white {
+  color: #171717;
+  background-color: #fff;
+}
+.sc-container-black {
+  color: #fff;
+  background-color: #171717;
+}
