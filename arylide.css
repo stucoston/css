@@ -225,3 +225,96 @@ img {
 /****** lists ******/
 ul.sc-ul{list-style-type:none;padding:0;margin:0}
 ul.sc-ul li{padding:6px 2px 6px 16px;}
+
+/****** animations ******/
+.sc-animate-fading {
+  -webkit-animation:fading 10s infinite;
+  animation:fading 10s infinite
+}
+@-webkit-keyframes fading {
+  0%{opacity:0}
+  50%{opacity:1}
+  100%{opacity:0}
+}
+@keyframes fading{
+  0%{opacity:0}
+  50%{opacity:1}
+  100%{opacity:0}
+}
+.sc-animate-opacity{
+  -webkit-animation:opac 2s;
+  animation:opac 2s}
+.sc-animate-opacity-long{
+  -webkit-animation:opac 3s;
+  animation:opac 3s}
+@-webkit-keyframes opac{
+  from{opacity:0} 
+  to{opacity:1}
+}
+@keyframes opac{
+  from{opacity:0} 
+  to{opacity:1}
+}
+.sc-animate-top{
+  position:relative;
+  -webkit-animation:animatetop 0.6s;
+  animation:animatetop 0.6s
+}
+@-webkit-keyframes animatetop{
+  from{top:-300px;opacity:0} 
+  to{top:0;opacity:1}
+}
+@keyframes animatetop{
+  from{top:-300px;opacity:0}
+  to{top:0;opacity:1}
+}
+.sc-animate-left{
+  position:relative;
+  -webkit-animation:animateleft 0.6s;
+  animation:animateleft 0.6s}
+@-webkit-keyframes animateleft{
+  from{left:-300px;opacity:0} 
+  to{left:0;opacity:1}
+}
+@keyframes animateleft{
+  from{left:-300px;opacity:0} 
+  to{left:0;opacity:1}
+}
+.sc-animate-right{
+  position:relative;
+  -webkit-animation:animateright 0.6s;
+  animation:animateright 0.6s
+}
+@-webkit-keyframes animateright{
+  from{right:-300px;opacity:0} 
+  to{right:0;opacity:1}
+}
+@keyframes animateright{
+  from{right:-300px;opacity:0} 
+  to{right:0;opacity:1}
+}
+.sc-animate-bottom{
+  position:relative;
+  -webkit-animation:animatebottom 0.6s;
+  animation:animatebottom 0.6s
+}
+@-webkit-keyframes animatebottom{
+  from{bottom:-300px;opacity:0} 
+  to{bottom:0px;opacity:1}
+}
+@keyframes animatebottom{
+  from{bottom:-300px;opacity:0} 
+  to{bottom:0;opacity:1}
+}
+.sc-animate-zoom {
+  -webkit-animation:animatezoom 0.8s;
+  animation:animatezoom 0.8s
+}
+@-webkit-keyframes animatezoom{
+  from{-webkit-transform:scale(0)} 
+  to{-webkit-transform:scale(1)}
+}
+@keyframes animatezoom{
+  from{transform:scale(0)} 
+  to{transform:scale(1)}
+}
