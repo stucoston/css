@@ -190,9 +190,7 @@ img {
   -webkit-transform: translateY(-50%); /* Chrome, Safari, Opera */
   transform: translateY(-50%);
 }
-.sc-text-center {
-  text-align: center;  
-}
+
 .sc-position-fixed-middle {
   position: fixed;
   top: 50%;
@@ -200,26 +198,6 @@ img {
   -ms-transform: translate(-50% -50%); /* IE 9 */
   -webkit-transform: translate(-50% -50%); /* Chrome, Safari, Opera */
   transform: translate(-50% -50%);
-}
-
-/****** colors ******/
-.sc-text-white {
-  color: #fff;
-  text-decoration: none;
-}
-.sc-text-black {
-  color: #171717;
-  text-decoration: none;
-}
-
-/****** containers ******/
-.sc-container-white {
-  color: #171717;
-  background-color: #fff;
-}
-.sc-container-black {
-  color: #fff;
-  background-color: #171717;
 }
 
 /****** lists ******/
