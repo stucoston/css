@@ -8148,29 +8148,38 @@ button.picker__today:focus,button.picker__clear:focus,button.picker__close:focus
 /******* Stu's additions ********/
 img {max-width: 100%;height: auto;}
 /****** flex center ******/
-.sc-flex-center,.sc-flex-center-row {display: flex;flex-flow: row wrap;align-content: center;align-items: center;justify-content: center;width: 100%;margin: 0!important }
-.sc-flex-center-column {display: flex;flex-flow: column wrap;align-content: center;align-items: center;justify-content: center;width: 100%;margin: 0!important}
-.sc-flex-center-row-reverse {display: flex;flex-flow: row-reverse wrap;align-content: center;align-items: center;justify-content: center;width: 100%;margin: 0!important }
-.sc-flex-center-column-reverse {display: flex;flex-flow: column-reverse wrap;align-content: center;align-items: center;justify-content: center;width: 100%;margin: 0!important }
+.flex-center,.sc-flex-center-row {display: flex;flex-flow: row wrap;align-content: center;align-items: center;justify-content: center;width: 100%;margin: 0!important }
+.flex-center-column {display: flex;flex-flow: column wrap;align-content: center;align-items: center;justify-content: center;width: 100%;margin: 0!important}
+.flex-center-row-reverse {display: flex;flex-flow: row-reverse wrap;align-content: center;align-items: center;justify-content: center;width: 100%;margin: 0!important }
+.flex-center-column-reverse {display: flex;flex-flow: column-reverse wrap;align-content: center;align-items: center;justify-content: center;width: 100%;margin: 0!important }
 /****** flex spacearound ******/
-.sc-flex-spacearound,.sc-flex-spacearound-row {display: flex;flex-flow: row wrap;align-content: center;align-items: center;justify-content: space-around;width: 100%;margin: 0!important }
+.flex-spacearound,.sc-flex-spacearound-row {display: flex;flex-flow: row wrap;align-content: center;align-items: center;justify-content: space-around;width: 100%;margin: 0!important }
 /****** flex left ******/
-.sc-flex-left,.sc-flex-left-row {display: flex;flex-flow: row wrap;align-content: center;align-items: center;justify-content: flex-start;width: 100%;margin: 0!important }
-.sc-flex-left-column {display: flex;flex-flow: column wrap;align-content: center;align-items: center;justify-content: flex-start;width: 100%;margin: 0!important }
-.sc-flex-left-row-reverse {display: flex;flex-flow: row-reverse wrap;align-content: center;align-items: center;justify-content: flex-start;width: 100%;margin: 0!important}
-.sc-flex-left-column-reverse {display: flex;flex-flow: column-reverse wrap;align-content: center;align-items: center;justify-content: flex-start;width: 100%;margin: 0!important }
+.flex-left,.sc-flex-left-row {display: flex;flex-flow: row wrap;align-content: center;align-items: center;justify-content: flex-start;width: 100%;margin: 0!important }
+.flex-left-column {display: flex;flex-flow: column wrap;align-content: center;align-items: center;justify-content: flex-start;width: 100%;margin: 0!important }
+.flex-left-row-reverse {display: flex;flex-flow: row-reverse wrap;align-content: center;align-items: center;justify-content: flex-start;width: 100%;margin: 0!important}
+.flex-left-column-reverse {display: flex;flex-flow: column-reverse wrap;align-content: center;align-items: center;justify-content: flex-start;width: 100%;margin: 0!important }
 /****** flex right ******/
 .flex-right,.flex-right-row {display: flex;flex-flow: row wrap;align-content: center;align-items: center;justify-content: flex-start;width: 100%;margin: 0!important }
 .flex-right-column {display: flex;flex-flow: column wrap;align-content: center;align-items: center;justify-content: flex-start;width: 100%;margin: 0!important }
 .flex-right-row-reverse {display: flex;flex-flow: row-reverse wrap;align-content: center;align-items: center;justify-content: flex-start;width: 100%;margin: 0!important }
 .flex-right-column-reverse {display: flex;flex-flow: column-reverse wrap;align-content: center;align-items: center;justify-content: flex-start;width: 100%;margin: 0!important }
 .flex-item-small {flex: 1 1 150px;max-width: 300px!important; /* Important - change will mess up mobile  */margin: 10px 15px;text-overflow: ellipsis;overflow:hidden;}
+/****** element sizing ******/
 .screen-height,.screen-size {height: 100vh;}
 .screen-width,.screen-size {height: 100vw;}
 .full-height..full-size {height:100%}
 .full-width,.full-size {width: 100%;}
 .half-height,.half-size (height: 50%}
 .half-width,.half-size (width: 50%}
+/****** positioning ******/
+.topleft{position:absolute;left:0;top:0}
+.topright{position:absolute;right:0;top:0}
+.bottomleft{position:absolute;left:0;bottom:0}
+.bottomright{position:absolute;right:0;bottom:0}
+.middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.topmiddle{position:absolute;left:0;top:0;width:100%;text-align:center}
+.bottommiddle{position:absolute;left:0;bottom:0;width:100%;text-align:center}
 .vertical-middle {position: absolute;top: 50%;-ms-transform: translateY(-50%); /* IE 9 */-webkit-transform: translateY(-50%); /* Chrome, Safari, Opera */transform: translateY(-50%);}
 .position-fixed-middle {position: fixed;top: 50%;left: 50%;-ms-transform: translate(-50% -50%); /* IE 9 */-webkit-transform: translate(-50% -50%); /* Chrome, Safari, Opera */transform: translate(-50% -50%);}
 ul.sw-ul{list-style-type:none;padding:0;margin:0}
