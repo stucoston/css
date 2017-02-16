@@ -8149,7 +8149,6 @@ button.picker__today:focus,button.picker__clear:focus,button.picker__close:focus
 }
 
 /******* Stu's additions ********/
-img {max-width: 100%;height: auto;}
 /****** flex center ******/
 .flex-center,.sc-flex-center-row {display: flex;flex-flow: row wrap;align-content: center;align-items: center;justify-content: center;width: 100%;margin: 0!important }
 .flex-center-column {display: flex;flex-flow: column wrap;align-content: center;align-items: center;justify-content: center;width: 100%;margin: 0!important}
