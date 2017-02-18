@@ -8191,6 +8191,10 @@ button.picker__today:focus,button.picker__clear:focus,button.picker__close:focus
 .padding-bottom {
   padding-bottom: 10px;
 }
+/****** styling ******/
+ul.sw-ul{list-style-type:none;padding:0;margin:0}
+ul.sw-ul li{padding:6px 2px 6px 16px;}
+.border{border:1px solid}
 /****** positioning ******/
 .topleft{position:absolute;left:0;top:0}
 .topright{position:absolute;right:0;top:0}
@@ -8202,7 +8206,5 @@ button.picker__today:focus,button.picker__clear:focus,button.picker__close:focus
 .vertical-middle {position: absolute;top: 50%;-ms-transform: translateY(-50%); /* IE 9 */-webkit-transform: translateY(-50%); /* Chrome, Safari, Opera */transform: translateY(-50%);}
 .position-fixed-middle {position: fixed;top: 50%;left: 50%;-ms-transform: translate(-50% -50%); /* IE 9 */-webkit-transform: translate(-50% -50%); /* Chrome, Safari, Opera */transform: translate(-50% -50%);}
 .center-offset {-ms-transform: translate(-50%,-50%); /* IE 9 */-webkit-transform: translate(-50%,-50%); /* Chrome, Safari, Opera */transform: translate(-50%,-50%);}
-ul.sw-ul{list-style-type:none;padding:0;margin:0}
-ul.sw-ul li{padding:6px 2px 6px 16px;}
 .rotate90counterclock {transform: rotate(-90deg);-webkit-transform:rotate(-90deg);-ms-transform:rotate(-90deg);}
 .rotate90clock {transform: rotate(90deg);-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);}
