@@ -8169,10 +8169,10 @@ button.picker__today:focus,button.picker__clear:focus,button.picker__close:focus
 .flex-right-column-reverse {display: flex;flex-flow: column-reverse wrap;align-content: center;align-items: center;justify-content: flex-start;width: 100%;margin: 0!important }
 .flex-item-small {flex: 1 1 150px;max-width: 300px!important; /* Important - change will mess up mobile  */margin: 10px 15px;text-overflow: ellipsis;overflow:hidden;}
 /****** element sizing ******/
-.screen-height,.screen-size {height: 100vh;}
-.screen-width,.screen-size {height: 100vw;}
-.full-height..full-size {height:100%}
-.full-width,.full-size {width: 100%;}
+.screen-height,.screen-size {height: 100vh}
+.screen-width,.screen-size {height: 100vw}
+.full-height,.full-size {height:100%}
+.full-width,.full-size {width: 100%}
 .half-height,.half-size {height: 50%}
 .half-width,.half-size {width: 50%}
 /****** padding ******/
