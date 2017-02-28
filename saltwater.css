@@ -4974,7 +4974,7 @@ small {
 }
 
 .btn:hover,.btn-large:hover {
-  /*background-color:transparent;*/
+  background-color:#e45f56; /*coral red*/
 }
 
 .btn-floating {
