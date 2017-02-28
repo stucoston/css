@@ -4916,6 +4916,13 @@ small {
   visibility:hidden
 }
 
+.btn-cta1 {
+  background-color:  #7accc8; /*light ocean blue*/
+}
+.btn-cta2 {
+  background-color: #e45f56; /*coral red*/
+}
+
 .btn,.btn-large,.btn-flat {
   border:none;
   border-radius:2px;
