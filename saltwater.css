@@ -4951,14 +4951,14 @@ small {
 }
 
 .btn:focus,.btn-large:focus,.btn-floating:focus {
-  background-color:transparent;
+  /*background-color:transparent;*/
   border: 1px solid;
 }
 
 .btn,.btn-large {
   text-decoration:none;
   color:#fff;
-  background-color:transparent;
+  /*background-color:transparent;*/
   text-align:center;
   letter-spacing:.5px;
   transition:.2s ease-out;
@@ -4966,7 +4966,7 @@ small {
 }
 
 .btn:hover,.btn-large:hover {
-  background-color:transparent
+  /*background-color:transparent;*/
 }
 
 .btn-floating {
@@ -4979,7 +4979,7 @@ small {
   height:40px;
   line-height:40px;
   padding:0;
-  background-color:transparent;
+  /*background-color:transparent;*/
   border-radius:50%;
   transition:.3s;
   cursor:pointer;
@@ -4987,7 +4987,7 @@ small {
 }
 
 .btn-floating:hover {
-  background-color:transparent
+  /*background-color:transparent;*/
 }
 
 .btn-floating:before {
