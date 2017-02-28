@@ -4883,6 +4883,14 @@ small {
 
 }
 
+.inline-block {
+  display:inline-block;
+}
+
+.inline {
+  display:inline;
+}
+
 .material-tooltip {
   padding:10px 8px;
   font-size:1rem;
@@ -4914,13 +4922,6 @@ small {
   -webkit-transform-origin:50% 0%;
   transform-origin:50% 0%;
   visibility:hidden
-}
-
-.btn-cta1 {
-  background-color:  #7accc8; /*light ocean blue*/
-}
-.btn-cta2 {
-  background-color: #e45f56; /*coral red*/
 }
 
 .btn,.btn-large,.btn-flat {
