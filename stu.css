@@ -8246,3 +8246,479 @@ ul.sw-ul li{padding:6px 2px 6px 16px;}
 .rotate90counterclock {transform: rotate(-90deg);-webkit-transform:rotate(-90deg);-ms-transform:rotate(-90deg);}
 .rotate90clock {transform: rotate(90deg);-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);}
 .screen-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+
+/*saltwater specific css*/
+ /* sitewide css */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  body, html {
+    font-family: "Montserrat", sans-serif;
+    height: 100%;
+    width: 100%;
+    color: white;
+    line-height: 1.8;
+    overflow:hidden;
+  }
+  #waterLoader {
+    height: 100vh;
+    width: 100vw;
+    background-color: #222;
+  }
+  .hp {
+    background-color:#222;
+  }
+  .pageNums svg {
+    font-family: "montserrat", sans-serif;
+    height: 100%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%,-50%); 
+    -webkit-transform: translate(-50%,-50%); 
+    transform: translate(-50%,-50%);
+  }
+  li a {
+    text-decoration: none;
+  }
+  .center-offset {
+    -ms-transform: translate(-50%,-50%); /* IE 9 */
+    -webkit-transform: translate(-50%,-50%); /* Chrome, Safari, Opera */
+    transform: translate(-50%,-50%);
+  }
+  .letter-space {
+    letter-spacing: 2px;
+  }
+  .pageNums {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    -webkit-animation: transinpn 0.5s ease forwards;
+    -webkit-animation-delay: 0.6s;
+    opacity:0;
+    animation: transinpn 0.5s ease forwards;
+    animation-delay: 0.6s;
+  }
+  .pageTitle {
+    font-weight: 100;
+    position: fixed;
+    line-height: 1em;
+    bottom: 47%;
+    color: white;
+    left: -100%;
+    animation: transinpt 0.5s ease forwards;
+    animation-delay: 0.8s;
+  }
+  .pageTitleBorder {
+    position: fixed;
+    width: 40px;
+    border-bottom: 1px solid white;
+    bottom: 45%;
+    left: -100%;
+    animation: transintb 0.7s ease forwards;
+    animation-delay: 0.4s;
+    -ms-transform: translate(0%,-50%); 
+    -webkit-transform: translate(0%,-50%); 
+    transform: translate(0%,-50%);
+  }
+  .pageContent {
+    position: fixed;
+    width: 40%;
+    top: 100%;
+    left: 20px;
+    animation: transincontent 0.7s ease forwards;
+    animation-delay: 0.9s;
+  }
+  .oceanContent {
+    position: fixed;
+    width: 60%;
+    top: 100%;
+    left: 20px;
+    animation: transinocean 0.7s ease forwards;
+    animation-delay: 0.9s;
+  }
+  .hoverableBlue:hover {
+    background-color: #4aaaa5;
+  }
+  .tagline {
+    margin-top: -20px;
+    font-size: 1.05em;
+    font-weight: 100;
+    letter-spacing: 4.5px;
+  }
+  /* end sitewide css */
+  /* Nav and Menu css */
+  nav {
+    z-index: 1;
+    box-shadow: none;
+    margin:0;
+    top:0;
+  }
+  .site-title {
+    display:inline-block;
+    font-size:26px;
+    font-family: 'montserrat',san-serif; 
+    font-weight: 700; 
+    cursor: pointer;
+    padding-top:10px;
+  }
+  .menu-container {
+    position:absolute;
+    right: 40px;
+    top: 15px;
+    height:40px;
+    width:40px;
+    padding:10px 0 10px 4px;
+    z-index: 10000000;
+    cursor: pointer;
+  }
+  .menu-container:hover .menu-container .bars span, .menu-container:hover .menu-container.is-menu-open .bars span {
+    background-color: #e9d66b;
+  }
+  .menu-container .bars {
+    width: 30px;
+    height: 25px;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1), -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+  }
+  .menu-container .bars span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin-top: 7px;
+  }
+  .menu-container .bars span:first-child {
+    margin-top: 0;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: -webkit-transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1), -webkit-transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    -webkit-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+  }
+  .menu-container .bars span:nth-child(3) {
+    width: 65%;
+    -webkit-transition: width 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: width 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    -webkit-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+  }
+  .menu-container .bars .other-bar {
+    width: 2px;
+    height: 0px;
+    position: absolute;
+    background-color: white;
+    top: -4px;
+    left: 50%;
+    margin-left: -1px;
+    -webkit-transition: height 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: height 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
+    z-index: 10;
+  }
+  .menu-container.is-menu-open {
+    right: 20px;
+    top: 20px;
+    transition-duration: 0.3s;
+    box-shadow: 0px 1px 2px #555;
+  }
+  
+  .menu-container.is-menu-open:hover {
+    box-shadow: 2px 2px 10px #222;
+  }
+  
+  .menu-container.is-menu-open .bars {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+  }
+  
+  .menu-container.is-menu-open .bars span:first-child {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: -webkit-transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1), -webkit-transform 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+  }
+  
+  .menu-container.is-menu-open .bars span:nth-child(3) {
+    width: 0;
+    -webkit-transition: width 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: width 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+  }
+  
+  .menu-container.is-menu-open .bars .other-bar {
+    height: 30px;
+    -webkit-transition: height 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: height 0.2s cubic-bezier(0.694, 0.048, 0.335, 1);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  /* end nav and menu css */
+  /* slide bg image css */
+  .mySlides {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height:100%;
+    width: 100%;
+  }
+  .bgimg-hp, .bgimg-1, .bgimg-2, .bgimg-3{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  .bgimg-1 {
+    background-image: url("https://github.com/stucoston/saltwater/blob/master/IMG_6212.JPG?raw=true");
+  }
+  .bgimg-2 {
+    background-image: url("https://github.com/stucoston/saltwater/blob/master/IMG_6211.JPG?raw=true");
+  }
+  .bgimg-3 {
+    background-image: url("https://github.com/stucoston/saltwater/blob/master/IMG_6214.JPG?raw=true");
+  }
+  /* end slide bg img css */
+  /* themeDiv css */
+  .themeDiv {
+    overflow: hidden;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+  }
+  /* end themeDiv css */
+  /* page up and down */
+  .pageup {
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    position: fixed;
+    z-index: 1;
+    bottom: 10px;
+    right: 80px;
+  }
+  .pagedown {
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    position: fixed;
+    z-index: 1;
+    bottom: 10px;
+    right: 30px;
+  }
+  .pagination{
+    position: fixed;
+    right: -25px;
+    top: 50%;
+    width: 50px;
+    -ms-transform: translate(-50%,-50%); 
+    -webkit-transform: translate(-50%,-50%); 
+    transform: translate(-50%,-50%);
+  }  
+  .activePage,.inactivePage:hover {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: white;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+  }
+  .inactivePage {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    opacity: 0.9;
+    cursor:pointer;
+  }
+  .sea {
+    position:fixed;
+    top:100%;
+    width: 100%;
+    height:100%;
+    /*animation: sea 10s ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite*/
+  }
+  .sea2 {
+    position:fixed;
+    top:100%;
+    width: 100%;
+    height:100%;
+    animation: sea2 1.5s ease-in-out;
+    z-index: 12;
+  }
+    
+  /* animations */
+    /** Safari 4.0 - 8.0 **/
+  @-webkit-keyframes transinpn {
+    0%   {opacity:0;}
+    10%  {opacity:1}
+    40%  {opacity:0}
+    55%  {opacity:1;}
+    70%  {opacity:0;}
+    75%  {opacity:1;}
+    90%  {opacity:0}
+    100% {opacity:1;}
+  }
+  @-webkit-keyframes transinpt {
+    0%   {left: -100%;}
+    100% {left: 20px;}
+  }
+  @-webkit-keyframes transintb {
+    0%   {left: -100%;width:0px}
+    35% {left:0%;width:0px;}
+    40%   {left: 0%;width:20px}
+    70%  {left: 0%;width:60px}
+    100% {left: 20px;width:40px}
+  }
+  @-webkit-keyframes transincontent {
+    0%   {top: 100%;}
+    100% {top: 60%;}
+  }
+  @-webkit-keyframes transinocean {
+    0%   {top: 100%;}
+    100% {top: 40%;}
+  }
+  @-webkit-keyframes sea2 {
+    0%   {top: 100%;}
+    100% {top: 0%;}
+  }
+  @-webkit-keyframes buttonHover {
+    0%   {background-color:white;opacity:0;}
+    10%  {opacity:1}
+    40%  {opacity:0}
+    55%  {opacity:1;}
+    70%  {opacity:0;}
+    75%  {opacity:1;}
+    90%  {opacity:0}
+    100% {opacity:1;}
+  }
+    /** Standard syntax **/
+  @keyframes transinpn {
+    0%   {opacity:0;}
+    10%  {opacity:1}
+    40%  {opacity:0}
+    55%  {opacity:1;}
+    70%  {opacity:0;}
+    75%  {opacity:1;}
+    90%  {opacity:0}
+    100% {opacity:1;}
+  }
+  @keyframes transinpt {
+    0%   {left: -100%;}
+    100% {left: 20px;}
+  }
+  @keyframes transintb {
+    0%   {left: -100%;width:0px}
+    35% {left:0%;width:0px;}
+    40%   {left: 0%;width:20px}
+    70%  {left: 0%;width:60px}
+    100% {left: 20px;width:40px}
+  }
+  @keyframes transincontent {
+    0%   {top: 100%;}
+    100% {top: 60%;}
+  }
+  @keyframes transinocean {
+    0%   {top: 100%;}
+    100% {top: 60%;}
+  }
+  @keyframes sea2 {
+    0%   {top: 100%;}
+    100% {top: 0%;}
+  }
+  @keyframes buttonHover {
+    0%   {background-color:white;opacity:0;}
+    10%  {opacity:1}
+    40%  {opacity:0}
+    55%  {opacity:1;}
+    70%  {opacity:0;}
+    75%  {opacity:1;}
+    90%  {opacity:0}
+    100% {opacity:1;}
+  }
+  /* end animations */
+  @media only screen and (min-width: 360px) {
+    .flow-text {
+      font-size:1.1rem;
+      line-height: 1.5rem;
+    }
+  }
+  @media only screen and (min-width: 390px) {
+    .flow-text {
+      font-size:1.12rem;
+    }
+  }
+  @media only screen and (min-width: 420px) {
+    .flow-text {
+    font-size:1.15rem;
+      line-height: 1.7rem;
+    }
+  }
+  @media only screen and (min-width: 450px) {
+    .flow-text {
+      font-size:1.2rem;
+    }
+  }
+  @media only screen and (min-width: 480px) {
+    .flow-text {
+      font-size:1.24rem
+    }
+  }
+  @media only screen and (min-width: 510px) {
+    .flow-text {
+      font-size:1.3rem;
+      line-height: 2rem;
+    }
+  }
+  @media only screen and (max-width: 360px) {
+    .flow-text {
+      font-size:1.1rem;
+      line-height: 1.5rem;
+    }
+  }
+    
+  .water-fill {
+    animation: wave 0.9s infinite linear, fill-up 10s infinite ease-in-out alternate
+  }
+  .water-fill2 {
+    animation: wave 0.9s infinite linear, fill-up2 10s infinite ease-in-out alternate
+  }
+  	
+  @keyframes wave {
+    0%   {x: -750px}
+    100% {x: 0}
+  }
+  @-webkit-keyframes wave {
+    0%   {x: -750px}
+    100% {x: 0}
+  }
+      
+  @keyframes fill-up {
+    0%   {height: 0; y: 100%;}
+    100% {height: 100%; y: 0%;}
+  }
+  @-webkit-keyframes fill-up {
+    0%   {height: 0; y: 100%;}
+    100% {height: 100%; y: 0%;}
+  }
+    
+  @keyframes fill-up2 {
+    0%   {height: 0; y: 100%;}
+    100% {height: 100%; y: 0%;}
+  }
+  @-webkit-keyframes fill-up2 {
+    0%   {height: 0; y: 100%;}
+    100% {height: 100%; y: 0%;}
+  }
