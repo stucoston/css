@@ -2100,7 +2100,7 @@ html {
   font-weight:normal;
 }
 
-body {
+html, body {
   margin:0
   padding:0
 }
