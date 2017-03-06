@@ -8724,3 +8724,7 @@ ul.sw-ul li{padding:6px 2px 6px 16px;}
 .clickable {
   cursor:pointer;
 }
+
+.overlay {
+  opacity:0.5; !important
+}
