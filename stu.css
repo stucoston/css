@@ -8418,6 +8418,7 @@ ul.sw-ul li{padding:6px 2px 6px 16px;}
     z-index: 10;
   }
   .menu-container.is-menu-open {
+    position:fixed;
     right: 20px;
     top: 20px;
     transition-duration: 0.3s;
